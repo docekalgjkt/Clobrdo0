@@ -1,5 +1,8 @@
 package com.company;
 
+import com.company.model.BarvaFigurky;
+import com.company.model.Figurka;
+import com.company.model.StartovniDomecek;
 import org.junit.jupiter.api.Test;
 
 import java.awt.*;

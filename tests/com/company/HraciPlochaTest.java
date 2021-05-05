@@ -1,9 +1,10 @@
 package com.company;
 
+import com.company.model.HraciPlocha;
+import com.company.model.Kostka;
 import org.junit.jupiter.api.Test;
 
 import java.util.Random;
-import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.*;
 

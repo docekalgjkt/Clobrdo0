@@ -1,4 +1,7 @@
-package com.company;
+package com.company.view;
+
+import com.company.model.Design;
+import com.company.model.HraciPlocha;
 
 import javax.swing.*;
 import javax.swing.border.MatteBorder;
@@ -56,9 +59,7 @@ public class GUI extends JFrame {
             nasazovaciTlacitka[i].setFocusable(false);
             nasazovaciTlacitka[i].setFont(new Font(poctyFigurek[0].getName(), Font.BOLD, 12)); // 10
             int i0 = i;
-            nasazovaciTlacitka[i].addActionListener(e -> {
-                HraciPlocha.hp.nasaditFigurku0(i0);
-            });
+            nasazovaciTlacitka[i].addActionListener(e -> HraciPlocha.hp.nasaditFigurku0(i0));
 
             for(int ii = 0; ii < 4; ii++) {
                 cile[i][ii] = new JButton();
@@ -68,9 +69,7 @@ public class GUI extends JFrame {
                 cile[i][ii].setFont(new Font(cile[i][ii].getName(), Font.BOLD, 50));
                 int ii1 = ii;
                 int i1 = i;
-                cile[i][ii].addActionListener(e -> {
-                    HraciPlocha.hp.vyberCilovehoPole(i1, ii1);
-                });
+                cile[i][ii].addActionListener(e -> HraciPlocha.hp.vyberCilovehoPole(i1, ii1));
             }
         }
 
@@ -95,10 +94,7 @@ public class GUI extends JFrame {
                     policka[pole - 1].setMargin(new Insets(0, 0, 0, 0));
                     policka[pole - 1].setFocusable(false);
 
-                    int xx = x, yy = y;
-                    policka[pole - 1].addActionListener(e -> {
-                        HraciPlocha.hp.vyberPole(pole - 1);
-                    });
+                    policka[pole - 1].addActionListener(e -> HraciPlocha.hp.vyberPole(pole - 1));
 
                     if((pole - 1) % 10 == 0 && (pole - 1) / 10 < HraciPlocha.hp.getPocetHracu()) {
                         policka[pole - 1].setBorder(new MatteBorder(4, 4, 4, 4, barvy[(pole - 1) / 10]));

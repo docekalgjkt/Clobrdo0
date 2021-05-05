@@ -1,4 +1,6 @@
-package com.company;
+package com.company.model;
+
+import com.company.view.GUI;
 
 import java.awt.*;
 import java.util.*;
@@ -193,7 +195,6 @@ public class HraciPlocha {
                     else {
                         konecTahu();
                     }
-
 
                     GUI.gui.vypniVsechnaPole();
                 }

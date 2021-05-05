@@ -1,4 +1,7 @@
-package com.company;
+package com.company.app;
+
+import com.company.model.HraciPlocha;
+import com.company.model.Kostka;
 
 public class Main {
 
