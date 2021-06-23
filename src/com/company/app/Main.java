@@ -1,8 +1,5 @@
 package com.company.app;
 
-import com.company.model.HraciPlocha;
-import com.company.model.Kostka;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -13,9 +10,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("gui1.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        Parent root = FXMLLoader.load(getClass().getResource("../view/rozhrani.fxml"));
+        primaryStage.setTitle("Clobrdo");
+        primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
 
